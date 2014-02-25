@@ -1,0 +1,25 @@
+{}
+│
+├─ {Mata(Cacahuetes, Bill)}
+│ │
+│ ├─ {Comida(Cacahuetes), Mata(Cacahuetes, Bill)}
+│ │ │
+│ │ ├─ {Come(Bill, Cacahuetes)}
+│ │ │
+│ │ └─ {Comida(x1), Mata(x1, x2), ~Come(x2, x1)}
+│ │
+│ └─ {~Comida(Cacahuetes)}
+│   │
+│   ├─ {LeGusta(John, x1), ~Comida(x1)}
+│   │
+│   └─ {~LeGusta(John, Cacahuetes)}
+│
+└─ {~Mata(Cacahuetes, Bill)}
+  │
+  ├─ {~Come(Bill, x1), ~Mata(x1, Bill)}
+  │ │
+  │ ├─ {EstaVivo(Bill)}
+  │ │
+  │ └─ {~Come(x1, x2), ~EstaVivo(x1), ~Mata(x2, x1)}
+  │
+  └─ {Come(Bill, Cacahuetes)}

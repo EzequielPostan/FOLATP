@@ -1,0 +1,4 @@
+loadKB( Test/gato.kb )
+conclusion( Mata(Maria,Iris) )
+runTo( Test/gato1.out )
+exit

@@ -1,0 +1,25 @@
+{}
+│
+├─ {ViveEn(Frodo, TierraMedia)}
+│ │
+│ ├─ {ViveEn(x1, TierraMedia), ~Hobbit(x1)}
+│ │ │
+│ │ ├─ {ViveEn(x1, Comarca), ~Hobbit(x1)}
+│ │ │
+│ │ └─ {ViveEn(x1, TierraMedia), ~ViveEn(x1, Comarca)}
+│ │
+│ └─ {Hobbit(Frodo)}
+│
+└─ {~ViveEn(Frodo, TierraMedia)}
+  │
+  ├─ {EsLeal(Frodo, Sauron), ~ViveEn(Frodo, TierraMedia)}
+  │ │
+  │ ├─ {EsLeal(x1, Sauron), Odia(x1, Sauron), ~ViveEn(x1, TierraMedia)}
+  │ │
+  │ └─ {~Odia(Frodo, Sauron)}
+  │
+  └─ {~EsLeal(Frodo, Sauron)}
+    │
+    ├─ {IntentaDestruir(Frodo, Sauron)}
+    │
+    └─ {~EsLeal(x1, x2), ~IntentaDestruir(x1, x2)}

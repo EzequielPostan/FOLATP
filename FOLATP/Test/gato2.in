@@ -1,0 +1,4 @@
+loadQuery( Test/gato.kb )
+conclusion( Mata(Maria,Iris) )
+runTo( Test/gato2.out )
+exit

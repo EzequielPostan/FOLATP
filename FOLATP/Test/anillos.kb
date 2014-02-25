@@ -1,0 +1,31 @@
+###########################
+# El Señor de los anillos #
+###########################
+
+# Frodo era un Hobbit.
+Hobbit(Frodo)
+
+# Sam era un Hobbit.
+Hobbit(Sam)
+
+# Todos los Hobbits vivían en la Comarca.
+[\forall x : Hobbit(x) => ViveEn(x,Comarca)]
+
+# Todos los que vivían en la Comarca vivían en la Tierra Media.
+[\forall x : ViveEn(x,Comarca) => ViveEn(x,TierraMedia)]
+
+# Todos los que vivían en la tierra Media eran leales a Saurón o lo odiaban.
+[\forall x : ViveEn(x,TierraMedia) => Odia(x,Sauron) | EsLeal(x,Sauron)]
+
+# Todos los seres son leales a alguien.
+[\forall x : [\exists y : EsLeal(x,y)]]
+
+# Uno sólo intenta destruir a alguien a quien no es leal.
+[\forall x : [\forall y : IntentaDestruir(x,y) => ~EsLeal(x,y)]]
+
+# Frodo intentó destruir a Saurón.
+IntentaDestruir(Frodo,Sauron)
+
+# Probar que Frodo odia a Sauron
+# Odia(Frodo,Sauron)]"
+

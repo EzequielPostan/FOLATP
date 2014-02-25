@@ -1,0 +1,4 @@
+loadQuery( Test/anillos.kb )
+conclusion( Odia(Frodo,Sauron) )
+runTo( Test/anillos2.out )
+exit

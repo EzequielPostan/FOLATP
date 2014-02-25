@@ -1,0 +1,69 @@
+{}
+│
+├─ {Mata(Juan, Iris)}
+│ │
+│ ├─ {Mata(Juan, Iris), ~AmaAnimales(Pedro)}
+│ │ │
+│ │ ├─ {Animal(Iris)}
+│ │ │ │
+│ │ │ ├─ {Animal(x1), ~Gato(x1)}
+│ │ │ │ │
+│ │ │ │ ├─ {Animal(x1), ~Mascota(x1)}
+│ │ │ │ │
+│ │ │ │ └─ {Mascota(x1), ~Gato(x1)}
+│ │ │ │
+│ │ │ └─ {Gato(Iris)}
+│ │ │
+│ │ └─ {Mata(Juan, Iris), ~AmaAnimales(Pedro), ~Animal(Iris)}
+│ │   │
+│ │   ├─ {Mata(Juan, Iris), Mata(Maria, Iris), ~AmaAnimales(Pedro), ~Animal(Iris)}
+│ │   │ │
+│ │   │ ├─ {Mata(Juan, Iris), Mata(Maria, Iris), Mata(Pedro, Iris)}
+│ │   │ │
+│ │   │ └─ {~AmaAnimales(x1), ~Animal(x2), ~Mata(x1, x2)}
+│ │   │
+│ │   └─ {~Mata(Maria, Iris)}
+│ │
+│ └─ {AmaAnimales(Pedro)}
+│   │
+│   ├─ {AmaAnimales(Pedro), ~Mascota(C1)}
+│   │ │
+│   │ ├─ {AmaAnimales(x1), ~Mascota(x2), ~Tiene(x1, x2)}
+│   │ │
+│   │ └─ {Tiene(Pedro, C1)}
+│   │
+│   └─ {Mascota(C1)}
+│     │
+│     ├─ {Gato(C1)}
+│     │
+│     └─ {Mascota(x1), ~Gato(x1)}
+│
+└─ {~Mata(Juan, Iris)}
+  │
+  ├─ {AmaAnimales(Juan)}
+  │ │
+  │ ├─ {AmaAnimales(Juan), ~Mascota(C0)}
+  │ │ │
+  │ │ ├─ {AmaAnimales(x1), ~Mascota(x2), ~Tiene(x1, x2)}
+  │ │ │
+  │ │ └─ {Tiene(Juan, C0)}
+  │ │
+  │ └─ {Mascota(C0)}
+  │   │
+  │   ├─ {Mascota(x1), ~Perro(x1)}
+  │   │
+  │   └─ {Perro(C0)}
+  │
+  └─ {~AmaAnimales(x1), ~Mata(x1, Iris)}
+    │
+    ├─ {Mascota(Iris)}
+    │ │
+    │ ├─ {Gato(Iris)}
+    │ │
+    │ └─ {Mascota(x1), ~Gato(x1)}
+    │
+    └─ {~AmaAnimales(x1), ~Mascota(x2), ~Mata(x1, x2)}
+      │
+      ├─ {Animal(x1), ~Mascota(x1)}
+      │
+      └─ {~AmaAnimales(x1), ~Animal(x2), ~Mata(x1, x2)}

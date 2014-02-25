@@ -1,0 +1,23 @@
+Demostrador Automatico de Teoremas "Resolucion"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Para compilar el programa situarse en el directorio foltp y 
+ejecutar make. Esto genera el archivo ejecutable "Resolucion".
+
+En la carpeta "Test" se encuentran las bases de conocimiento,
+entradas y salidas de algunos ejemplos.
+
+Para correr el programa debemos ejecutar ./Resolucion en el 
+directorio foltp, luego de la compilacion del mismo. Dentro del 
+programa ejecutando "help" se muestran todos los comandos 
+disponibles y la función de cada uno de ellos.
+
+Los ejemplos en "Test" se pueden probar de la siguiente manera:
+user@user-PC:~/FOLATP$ ./Resolucion < gato1.in
+Esto genera el archivo Test/gato1.out con el arbol de refutacion
+obtenido. Analogamente se pueden correr los ejemplos "anillos"
+y "comidas". Los archivos de entrada con el numero 1 utilizan el
+metodo de conjunto soporte (backward chaining) y los que tienen
+el numero dos utilizan el metodo general, en el cual no se 
+requiere que las premisas sean consistentes para dar una
+respuesta correcta.

@@ -1,0 +1,4 @@
+loadKB( Test/comidas.kb )
+conclusion( LeGusta(John,Cacahuetes) )
+runTo( Test/comidas1.out )
+exit

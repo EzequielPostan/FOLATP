@@ -1,0 +1,4 @@
+loadKB( Test/anillos.kb )
+conclusion( Odia(Frodo,Sauron) )
+runTo( Test/anillos1.out )
+exit

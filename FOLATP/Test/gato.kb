@@ -1,0 +1,23 @@
+#####################
+# Muerte de un gato #
+#####################
+
+# Juan tiene un perro y Pedro tiene un gato.
+[\exists x : Tiene(Juan,x) & Perro(x)]
+[\exists y : Tiene(Pedro,y) & Gato(y)]
+[\forall x : Gato(x) | Perro(x) => Mascota(x)]
+[\forall x : Mascota(x) => Animal(x)]
+
+# Todos los que tienen una mascota aman a los animales
+[\forall x : [\exists y : Mascota(y) & Tiene(x,y)] => AmaAnimales(x)]
+
+# Nadie que ame a los animales los mata.
+[\forall x : [\forall y : Animal(y) & AmaAnimales(x) => ~Mata(x,y)]]
+
+# Juan, Pedro o María mataron a la gata de Luis que se llama Iris.
+Gato(Iris) & Tiene(Luis,Iris)
+Mata(Juan,Iris) | Mata(Pedro,Iris) | Mata(Maria,Iris)
+
+# Se pide que pruebe que María mató a Iris, usando resolución.
+# ~Mata(Maria,Iris)
+

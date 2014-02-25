@@ -1,0 +1,25 @@
+###########
+# Comidas #
+###########
+
+# A John le gusta toda clase de comida.
+[\forall x : Comida(x) => LeGusta(John,x)]
+
+# Las manzanas son comida.
+Comida(Manzanas)
+
+# El pollo es comida.
+Comida(Pollo)
+
+# Cualquier cosa que uno coma y no le mate es comida.
+[\forall x : [\exists y : Come(y,x) & ~Mata(x,y)] => Comida(x)]
+
+# Bill come cacahuetes y aún está vivo.
+Come(Bill,Cacahuetes) & EstaVivo(Bill)
+[\forall x : [\forall y : Come(x,y) & EstaVivo(x) => ~Mata(y,x)]]
+
+# Sue come todo lo que come Bill.
+[\forall x : Come(Bill,x) => Come(Sue,x)]
+
+# Muestre que a John le gustan los cacahuetes.
+# LeGusta(John,Cacahuetes)

@@ -1,0 +1,4 @@
+loadQuery( Test/comidas.kb )
+conclusion( LeGusta(John,Cacahuetes) )
+runTo( Test/comidas2.out )
+exit

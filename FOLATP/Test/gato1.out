@@ -1,0 +1,57 @@
+{}
+│
+├─ {~Gato(C1)}
+│ │
+│ ├─ {~Gato(x1), ~Tiene(Pedro, x1)}
+│ │ │
+│ │ ├─ {~Gato(x1), ~Gato(Iris), ~Tiene(Pedro, x1)}
+│ │ │ │
+│ │ │ ├─ {~Gato(x1), ~Gato(Iris), ~Perro(C0), ~Tiene(Pedro, x1)}
+│ │ │ │ │
+│ │ │ │ ├─ {~Gato(x1), ~Gato(Iris), ~Mascota(C0), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │
+│ │ │ │ │ ├─ {~Gato(x1), ~Gato(Iris), ~Mascota(x2), ~Tiene(Juan, x2), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │ │
+│ │ │ │ │ │ ├─ {~AmaAnimales(Juan), ~Gato(x1), ~Gato(Iris), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ ├─ {~AmaAnimales(Juan), ~Gato(x1), ~Mascota(Iris), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ ├─ {~AmaAnimales(Juan), ~Animal(Iris), ~Gato(x1), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ ├─ {Mata(Juan, Iris), ~Animal(Iris), ~Gato(x1), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ ├─ {Mata(Juan, Iris), ~Animal(Iris), ~Mascota(x1), ~Tiene(Pedro, x1)}
+│ │ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ │ ├─ {Mata(Juan, Iris), ~AmaAnimales(Pedro), ~Animal(Iris)}
+│ │ │ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ │ │ ├─ {Mata(Juan, Iris), Mata(Pedro, Iris)}
+│ │ │ │ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ │ │ │ ├─ {~Mata(Maria, Iris)}
+│ │ │ │ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ │ │ │ └─ {Mata(Juan, Iris), Mata(Maria, Iris), Mata(Pedro, Iris)}
+│ │ │ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ │ │ └─ {~AmaAnimales(x1), ~Animal(x2), ~Mata(x1, x2)}
+│ │ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ │ └─ {AmaAnimales(x1), ~Mascota(x2), ~Tiene(x1, x2)}
+│ │ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ │ └─ {Mascota(x1), ~Gato(x1)}
+│ │ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ │ └─ {~AmaAnimales(x1), ~Animal(x2), ~Mata(x1, x2)}
+│ │ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ │ └─ {Animal(x1), ~Mascota(x1)}
+│ │ │ │ │ │ │ │
+│ │ │ │ │ │ │ └─ {Mascota(x1), ~Gato(x1)}
+│ │ │ │ │ │ │
+│ │ │ │ │ │ └─ {AmaAnimales(x1), ~Mascota(x2), ~Tiene(x1, x2)}
+│ │ │ │ │ │
+│ │ │ │ │ └─ {Tiene(Juan, C0)}
+│ │ │ │ │
+│ │ │ │ └─ {Mascota(x1), ~Perro(x1)}
+│ │ │ │
+│ │ │ └─ {Perro(C0)}
+│ │ │
+│ │ └─ {Gato(Iris)}
+│ │
+│ └─ {Tiene(Pedro, C1)}
+│
+└─ {Gato(C1)}
