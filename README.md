@@ -6,5 +6,4 @@ An ATP for First Order Logic written in Haskell.
 
 Autors
 ======
-Ait Ismael 
-Postan Ezequiel
+Ait Ismael - Postan Ezequiel
